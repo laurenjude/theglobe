@@ -90,16 +90,18 @@ input {
 }
 
 .loading {
-  font-size: 900px;
+  font-size: 500px;
   margin: auto;
   display: block;
   animation: spin 5s linear infinite;
   transform-origin: center;
+  position: relative;
+  bottom: 90px;
 }
 
 @keyframes spin {
   0% {
-    transform: rotateY(0deg);
+    transform: rotate(0deg);
   }
   100% {
     transform: rotateY(-360deg);
@@ -109,6 +111,21 @@ input {
 /* =======MEDIA QUERY============= */
 
 @media (max-width: 500px) {
+  .navbr {
+    display: flex;
+    padding-left: 5%;
+    padding-right: 5%;
+    position: relative;
+    right: 50px;
+    white-space: nowrap;
+  }
+
+  nav div {
+    white-space: nowrap;
+    position: relative;
+    right: 13px;
+  }
+
   .allcountries {
     display: flex;
     flex-direction: column;
@@ -129,5 +146,38 @@ input {
   .pnh {
     display: flex;
     flex-direction: column;
+  }
+
+  .dropdown-display {
+    top: 70px;
+    left: -345px;
+  }
+
+  input {
+    display: block;
+    width: 330px !important;
+    margin: auto;
+    position: relative;
+    right: 15px;
+    bottom: 30px;
+  }
+
+  .search-icon {
+    top: -30px;
+  }
+
+  .cdimg {
+    width: 100% !important;
+    height: 250px;
+    margin: auto;
+  }
+  .phone {
+    max-width: 400px;
+  }
+
+  .loading {
+    font-size: 150px;
+    position: relative;
+    top: 50px;
   }
 }

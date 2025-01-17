@@ -21,7 +21,7 @@ const NavBar = () => {
 
   return (
     <nav className="d-flex justify-content-between align-items-center p-5 shadow bg-element custom-text-color">
-      <h3 className="mb-0">Where in the world?</h3>
+      <h3 className="mb-0 navbr">Where in the world?</h3>
       <div
         onClick={() => {
           // toggle the lightmode class on the body

@@ -30,7 +30,7 @@ function App() {
     };
     setTimeout(() => {
       getData();
-    }, 3000);
+    }, 500);
   }, []);
 
   // ========== FILTER BY SEARCH ==========
